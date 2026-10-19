@@ -12,3 +12,7 @@ Data written inside a container lives in the container's writable layer, so it i
 
 `latest` is just a moving label that points to whatever version was pushed most recently, not a fixed version. When I ran `docker run hello-world` without a tag, Docker silently pulled `hello-world:latest`. A build that works today with `latest` may break or behave differently next month because the tag points to a new image, so the same Dockerfile does not always produce the same result. I checked that `python:3.12-slim` currently points to Python 3.12.15 using `docker image inspect`, and pinned my base image to `python:3.12.15-slim` instead.
 
+## Notes on using AI assistant
+
+I used an AI assistant as a peer reviewer to double-check my Dockerfile syntax, test steps, and formatting in ANSWERS.md.
+
